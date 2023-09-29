@@ -1,0 +1,5 @@
+É definida em 3 partes: nome, parâmetro e corpo
+
+def nome_da_função(parâmetros):
+<corpo da função>
+return "valor de retorno"

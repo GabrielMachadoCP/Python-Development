@@ -1,0 +1,5 @@
+Serialização - objeto Python para arquivo JSON
+Deserialização - arquivo json para objeto Python
+
+Para fazer a Serialização - Dump()
+Para fazer a Deserialização - Loads()

@@ -1,0 +1,5 @@
+print("Digite o ano atual:")
+anoAtual = int(input())
+print("Digite o ano de seu nascimento:")
+anoNasc = int(input())
+print("Sua idade é:", anoAtual - anoNasc)

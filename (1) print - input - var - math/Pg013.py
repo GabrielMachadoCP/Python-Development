@@ -1,0 +1,5 @@
+print("Digite o valor do lado do triângulo:")
+lado = float(input())
+print("Digite o valor da altura do triângulo:")
+altura = float(input())
+print("A área do seu triângulo é:", (lado * altura)/2)
