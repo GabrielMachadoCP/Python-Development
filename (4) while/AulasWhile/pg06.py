@@ -25,11 +25,3 @@ elif C > A and C > B:
     C = meio
 elif C < A and C > B:
     C = meio
-
-else:
-
-
-while i != 0:
-    i = int(input("Digite um número inteiro:"))
-    if i == 1:
-        
