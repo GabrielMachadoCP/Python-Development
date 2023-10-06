@@ -1,25 +1,28 @@
+# Gabriel Machado Carrara Pimentel
+# RM 99880
 
-#Sorteando a jogada do computador
+# Sorteando a jogada do computador
 def jogada_computador(opcoes):
     import random
     return random.choice(opcoes)
 
 
-def verifica(jogador, pc): 
+# Verificando o vencedor da rodada
+def verifica(jogador, pc, ptojogador, ptopc):
     if (jogador == "PAPEL") and (pc == "TESOURA"):
         ptopc += 1
-        return vencedor == pc
+        print(f"Derrota! \nPontuação:\nJogador: {ptojogador}\tPC: {ptopc}")
     elif (jogador == "TESOURA") and (pc == "PEDRA"):
         ptopc += 1
-        return vencedor == pc
+        print(f"Derrota! \nPontuação:\nJogador: {ptojogador}\tPC: {ptopc}")
     elif (jogador == "PEDRA") and (pc == "PAPEL"):
         ptopc += 1
-        return vencedor == pc
+        print(f"Derrota! \nPontuação:\nJogador: {ptojogador}\tPC: {ptopc}")
     elif (jogador == pc):
-        return print(f"Empate!\nAmbos jogaram {pc}") 
+        print(f"Empate!\nAmbos jogaram {pc}")
     else:
         ptojogador += 1
-        return vencedor == jogador
+        print(f"Vitória!\nPontuação:\nJogador: {ptojogador}\tPC: {ptopc}")
+    return ptojogador, ptopc
 
-vencedor = ''
 opcoes = ["PEDRA", "PAPEL", "TESOURA"]
